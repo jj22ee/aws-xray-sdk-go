@@ -13,8 +13,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/jj22ee/aws-xray-sdk-go/internal/logger"
-	"github.com/jj22ee/aws-xray-sdk-go/internal/plugins"
+	"github.com/jj22ee/aws-xray-sdk-go/v2/internal/logger"
+	"github.com/jj22ee/aws-xray-sdk-go/v2/internal/plugins"
 )
 
 // Origin is the type of AWS resource that runs your application.

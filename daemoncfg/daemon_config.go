@@ -14,7 +14,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/jj22ee/aws-xray-sdk-go/internal/logger"
+	"github.com/jj22ee/aws-xray-sdk-go/v2/internal/logger"
 	"github.com/pkg/errors"
 )
 

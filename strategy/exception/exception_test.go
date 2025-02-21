@@ -12,7 +12,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/jj22ee/aws-xray-sdk-go/utils/awserr"
+	"github.com/jj22ee/aws-xray-sdk-go/v2/utils/awserr"
 	"github.com/stretchr/testify/assert"
 )
 

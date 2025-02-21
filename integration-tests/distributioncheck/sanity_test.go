@@ -12,7 +12,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/jj22ee/aws-xray-sdk-go/xray"
+	"github.com/jj22ee/aws-xray-sdk-go/v2/xray"
 	"github.com/stretchr/testify/assert"
 )
 

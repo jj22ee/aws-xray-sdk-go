@@ -328,7 +328,7 @@ func TestStripPasswords(t *testing.T) {
 			want: "odbc:server=localhost;user id=sa;otherthing=thing",
 		},
 
-		// see https://github.com/jj22ee/aws-xray-sdk-go/issues/181
+		// see https://github.com/jj22ee/aws-xray-sdk-go/v2/issues/181
 		{
 			in:   "password=",
 			want: "",
