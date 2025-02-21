@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/jj22ee/aws-xray-sdk-go/v2/header"
+	"github.com/aws/aws-xray-sdk-go/v2/header"
 	"github.com/valyala/fasthttp"
 )
 

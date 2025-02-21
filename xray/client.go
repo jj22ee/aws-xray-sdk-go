@@ -16,7 +16,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/jj22ee/aws-xray-sdk-go/v2/internal/logger"
+	"github.com/aws/aws-xray-sdk-go/v2/internal/logger"
 )
 
 // TraceIDHeaderKey is the HTTP header name used for tracing.
