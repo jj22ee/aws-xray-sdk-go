@@ -11,7 +11,7 @@ package sampling
 import (
 	"testing"
 
-	"github.com/aws/aws-xray-sdk-go/utils"
+	"github.com/jj22ee/aws-xray-sdk-go/utils"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -14,7 +14,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/aws/aws-xray-sdk-go/utils"
+	"github.com/jj22ee/aws-xray-sdk-go/utils"
 )
 
 const defaultRule = "Default"

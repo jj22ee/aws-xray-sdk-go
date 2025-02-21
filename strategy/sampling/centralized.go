@@ -16,11 +16,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/aws/aws-xray-sdk-go/daemoncfg"
-	"github.com/aws/aws-xray-sdk-go/internal/logger"
-	"github.com/aws/aws-xray-sdk-go/internal/plugins"
+	"github.com/jj22ee/aws-xray-sdk-go/daemoncfg"
+	"github.com/jj22ee/aws-xray-sdk-go/internal/logger"
+	"github.com/jj22ee/aws-xray-sdk-go/internal/plugins"
 
-	"github.com/aws/aws-xray-sdk-go/utils"
+	"github.com/jj22ee/aws-xray-sdk-go/utils"
 )
 
 // CentralizedStrategy is an implementation of SamplingStrategy. It

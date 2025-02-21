@@ -21,8 +21,8 @@ import (
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/service/route53"
 	"github.com/aws/aws-sdk-go-v2/service/route53/types"
-	"github.com/aws/aws-xray-sdk-go/strategy/ctxmissing"
-	"github.com/aws/aws-xray-sdk-go/xray"
+	"github.com/jj22ee/aws-xray-sdk-go/strategy/ctxmissing"
+	"github.com/jj22ee/aws-xray-sdk-go/xray"
 )
 
 func TestAWSV2(t *testing.T) {
