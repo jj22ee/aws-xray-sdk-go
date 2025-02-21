@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/jj22ee/aws-xray-sdk-go/v2/xraylog"
+	"github.com/aws/aws-xray-sdk-go/v2/xraylog"
 )
 
 // This internal package hides the actual logging functions from the user.
