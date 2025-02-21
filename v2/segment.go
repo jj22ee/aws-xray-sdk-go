@@ -19,10 +19,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/jj22ee/aws-xray-sdk-go/header"
-	"github.com/jj22ee/aws-xray-sdk-go/internal/logger"
-	"github.com/jj22ee/aws-xray-sdk-go/internal/plugins"
-	"github.com/jj22ee/aws-xray-sdk-go/strategy/sampling"
+	"github.com/jj22ee/aws-xray-sdk-go/v2/header"
+	"github.com/jj22ee/aws-xray-sdk-go/v2/internal/logger"
+	"github.com/jj22ee/aws-xray-sdk-go/v2/internal/plugins"
+	"github.com/jj22ee/aws-xray-sdk-go/v2/strategy/sampling"
 )
 
 // NewTraceID generates a string format of random trace ID.

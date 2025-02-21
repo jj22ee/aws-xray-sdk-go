@@ -9,14 +9,14 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/jj22ee/aws-xray-sdk-go/internal/logger"
+	"github.com/jj22ee/aws-xray-sdk-go/v2/internal/logger"
 
 	"google.golang.org/grpc/codes"
 
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/jj22ee/aws-xray-sdk-go/header"
+	"github.com/jj22ee/aws-xray-sdk-go/v2/header"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 )
