@@ -13,6 +13,11 @@ If you want additional features when tracing your Go applications, please [open 
 
 ## Installing into GOPATH
 
+> [!TIP]
+> For v2 of the AWS X-Ray SDK for Go, add `v2` as a suffix to "github.com/aws/aws-xray-sdk-go"
+>
+> (e.g. `github.com/aws/aws-xray-sdk-go/v2`)
+
 The AWS X-Ray SDK for Go is compatible with Go 1.19 and above.
 
 Install the SDK using the following command (The SDK's non-testing dependencies will be installed):
@@ -38,10 +43,16 @@ go get -u -t github.com/aws/aws-xray-sdk-go/...
 
 The latest version of the SDK is the recommended version.
 
-If you are using Go 1.11 and above, you can install the SDK using Go Modules (in project's go.mod), like so: 
+If you are using Go 1.11 and above, you can install v1 of the SDK using Go Modules (in project's go.mod), like so:
 
 ```
 go get github.com/aws/aws-xray-sdk-go
+```
+
+For v2 of the X-Ray SDK, install it with the following command:
+
+```
+go get github.com/aws/aws-xray-sdk-go/v2
 ```
 
 To get a different specific release version of the SDK use `@<tag>` in your `go get` command. Also, to get the rc version use this command with the specific version.
@@ -73,6 +84,11 @@ See [aws-xray-sdk-go-sample](https://github.com/aws-samples/aws-xray-sdk-go-samp
 ## Quick Start
 
 **Configuration**
+
+> [!TIP]
+> For v2 of the AWS X-Ray SDK for Go, add `v2` as a suffix to "github.com/aws/aws-xray-sdk-go"
+>
+> (e.g. `github.com/aws/aws-xray-sdk-go/v2/xray`)
 
 ```go
 import "github.com/aws/aws-xray-sdk-go/xray"
@@ -110,6 +126,11 @@ xray.SetLogger(xraylog.NewDefaultLogger(os.Stderr, xraylog.LogLevelError))
 Note that the `xray.Config{}` fields `LogLevel` and `LogFormat` are deprecated starting from version `1.0.0-rc.10` and no longer have any effect.
 
 ***Plugins***
+
+> [!TIP]
+> For v2 of the AWS X-Ray SDK for Go, add `v2` as a suffix to "github.com/aws/aws-xray-sdk-go"
+>
+> (e.g. `github.com/aws/aws-xray-sdk-go/v2/path1/path2`)
 
 Plugins can be loaded conditionally at runtime. For this purpose, plugins under "github.com/aws/aws-xray-sdk-go/awsplugins/" have an explicit `Init()` function. Customer must call this method to load the plugin:
 
@@ -225,6 +246,11 @@ func main() {
 *Segment creation is not necessary in an AWS Lambda function, where the segment is created automatically*
 
 **AWS SDK V2 Instrumentation**
+
+> [!TIP]
+> For v2 of the AWS X-Ray SDK for Go, add `v2` as a suffix to "github.com/aws/aws-xray-sdk-go"
+>
+> (e.g. `github.com/aws/aws-xray-sdk-go/v2/path1/path2`)
 
 ```go
 package main
@@ -361,6 +387,11 @@ grpcServer := grpc.NewServer(
 
 ## fasthttp instrumentation 
 
+> [!TIP]
+> For v2 of the AWS X-Ray SDK for Go, add `v2` as a suffix to "github.com/aws/aws-xray-sdk-go"
+>
+> (e.g. `github.com/aws/aws-xray-sdk-go/v2/path1/path2`)
+
 Support for incoming requests with [valyala/fasthttp](https://github.com/valyala/fasthttp):
 
 ```go
@@ -415,6 +446,12 @@ func main() {
 ```
 
 ## Oversampling Mitigation
+
+> [!TIP]
+> For v2 of the AWS X-Ray SDK for Go, add `v2` as a suffix to "github.com/aws/aws-xray-sdk-go"
+>
+> (e.g. `github.com/aws/aws-xray-sdk-go/v2/path1/path2`)
+
 Oversampling mitigation allows you to ignore a parent segment/subsegment's sampled flag and instead sets the subsegment's sampled flag to false.
 This ensures that downstream calls are not sampled and this subsegment is not emitted.
 
@@ -455,6 +492,11 @@ func main() {
 ```
 
 The code below demonstrates overriding the sampled flag based on the SQS messages sent to Lambda.
+
+> [!TIP]
+> For v2 of the AWS X-Ray SDK for Go, add `v2` as a suffix to "github.com/aws/aws-xray-sdk-go"
+>
+> (e.g. `github.com/aws/aws-xray-sdk-go/v2/path1/path2`)
 
 ```go
 import (
